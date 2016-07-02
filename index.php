@@ -4,6 +4,7 @@
 
     $Router = new Core\Http\UrlAmigavel(URL);
 
+
     $Req = new $Router->ret;
 
-    // var_dump($_SERVER);
+    // var_dump($Req);

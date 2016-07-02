@@ -8,9 +8,9 @@
         protected $view;
         protected $param;
 
-        function __construct($view, $param)
+        function make($view = '', $assets, $param = '')
         {
-            $this->view = ABSOLUTE_DIR.'/Src/App/View/'.$this->view.'.phtml';
+            $this->view = ABSOLUTE_DIR.'/Src/App/View/'.$view.'.phtml';
             $this->param = $param;
             return $this->load();
         }

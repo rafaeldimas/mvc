@@ -12,7 +12,7 @@ class UrlAmigavel
     {
         $this->urlArr = explode('/', $url);
 
-        if ($this->urlArr[2]) :
+        if (!is_null($this->urlArr[2])) :
 
             if (!file_exists('Src/App/Controller/'.$this->urlArr[2].'Controller.php')):
 

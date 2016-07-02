@@ -1,7 +1,7 @@
-    </div>
+
     <?php
-        foreach ($this->param['js'] as $key => $value) {
-            echo '<script type="text/javascript'.$value.'"></script>';
+        foreach ($this->assets['js'] as $key => $value) {
+            echo '<script type="text/javascript" src="'.$value.'"></script>';
         }
     ?>
 

@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-class LoginController extends \Core\Controller
+class ValidaLoginController extends \Core\Controller
 {
     protected $url;
     protected $nameView;
@@ -12,15 +12,9 @@ class LoginController extends \Core\Controller
     {
         $this->url = explode('/', URL);
 
-        if (is_null($this->url[2]))
-        {
-            $this->nameView = 'Login';
-        }
-        else
-        {
-            $this->nameView = $this->url[2];
-        }
+        $this->nameView = $this->url[2];
 
         parent::view($this->nameView, $this->param);
     }
+
 }

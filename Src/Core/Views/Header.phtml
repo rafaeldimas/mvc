@@ -5,11 +5,10 @@
     <title><?=$this->nameView?></title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
     <?php
-        foreach ($this->param['css'] as $key => $value) {
+        foreach ($this->assets['css'] as $key => $value) {
             echo '<link rel="stylesheet" href="'.$value.'">';
         }
     ?>
 
 </head>
 <body>
-    <div class="container">
